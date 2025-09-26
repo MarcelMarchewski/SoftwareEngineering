@@ -5,7 +5,7 @@ float height = 1.84f;
 char grade = toupper('a');
 std::string name = "Dave";
 
-int main() 
+void TaskOne() 
 {
 	std::cout << name << ":\nAge: " << age << "\nHeight: " << height << "\nGrade: " << grade << "\n\n";
 
@@ -15,6 +15,4 @@ int main()
 	name = "Steve";
 
 	std::cout << name << ":\nAge: " << age << "\nHeight: " << height << "\nGrade: " << grade << "\n\n";
-
-	return 0;
 }
