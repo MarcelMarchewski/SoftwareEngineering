@@ -3,12 +3,14 @@
 #include "TaskOne.h"
 #include "TaskTwo.h"
 #include "TaskThree.h"
+#include "TaskFour.h"
+#include "TaskFive.h"
 
 #include <list>
 
 int main() 
 {
-	std::list<Task*> tasks = { new TaskOne(), new TaskTwo(), new TaskThree() };
+	std::list<Task*> tasks = { new TaskOne(), new TaskTwo(), new TaskThree(), new TaskFour(), new TaskFive() };
 
 	int targetTask;
 

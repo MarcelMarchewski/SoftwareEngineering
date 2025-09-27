@@ -20,14 +20,15 @@ class TaskThree : public Task
 
 		void RecursiveIncrement(int depth = 1) 
 		{
-			system("cls");
-
 			int loc = 0;
 
+			static int stat = 0;
+
 			glob++;
+			stat++;
 			loc++;
 
-			std::cout << "Iteration " << depth << ":\n\nGlobal: " << glob << "\nStatic: " << "\nLocal: " << loc;
+			std::cout << "Iteration " << depth + 1 << ":\n\nGlobal: " << glob << "\nStatic: " << stat << "\nLocal: " << loc << "\n\n";
 
 			depth++;
 
