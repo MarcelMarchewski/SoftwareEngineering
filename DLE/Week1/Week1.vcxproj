@@ -127,7 +127,6 @@
     <ClCompile Include="TaskTwo.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Task.h" />
     <ClInclude Include="TaskFive.h" />
     <ClInclude Include="TaskFour.h" />
     <ClInclude Include="TaskThree.h" />
