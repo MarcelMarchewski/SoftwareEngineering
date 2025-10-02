@@ -1,10 +1,6 @@
 #include "../SharedSystems/Task.h"
 
 #include "TaskOne.h"
-#include "TaskTwo.h"
-#include "TaskThree.h"
-#include "TaskFour.h"
-#include "TaskFive.h"
 
 #include <list>
 
@@ -12,15 +8,15 @@
 /// Called at initial run, prompts user to choose which task program to run
 /// </summary>
 /// <returns>0</returns>
-int main() 
+int main()
 {
 	// Declare and initialise list of Task objects to be iterated through in the ID check
-	std::list<Task*> tasks = { new TaskOne(), new TaskTwo(), new TaskThree(), new TaskFour(), new TaskFive() };
+	std::list<Task*> tasks = { new TaskOne() };
 
 	// Declare a variable for storing the target task ID, then gather user input that gives it a value
 	int targetTask;
 
-	std::cout << "Week 1 Tasks\n\n";
+	std::cout << "Week 2 Tasks\n\n";
 
 	std::cout << "Provide a task number to execute: ";
 
@@ -30,7 +26,7 @@ int main()
 	system("cls");
 
 	// Iterate through each task, determine if the current task matches the user provided ID, execute the task if the ID matches
-	for (Task* t : tasks) 
+	for (Task* t : tasks)
 	{
 		if (t->ID() == targetTask)
 		{
