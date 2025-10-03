@@ -5,7 +5,7 @@
 ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 
 .data
-  result DWORD ?
+  result SDWORD ? ; define result variable
 .code
 main PROC
   mov eax, 15 ; store 'A'
