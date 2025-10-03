@@ -1,6 +1,10 @@
 #include "../SharedSystems/Task.h"
 
 #include "TaskOne.h"
+#include "TaskTwo.h"
+#include "TaskThree.h"
+#include "TaskFour.h"
+#include "TaskFive.h"
 
 #include <list>
 
@@ -11,7 +15,7 @@
 int main()
 {
 	// Declare and initialise list of Task objects to be iterated through in the ID check
-	std::list<Task*> tasks = { new TaskOne() };
+	std::list<Task*> tasks = { new TaskOne(), new TaskTwo(), new TaskThree(), new TaskFour(), new TaskFive() };
 
 	// Declare a variable for storing the target task ID, then gather user input that gives it a value
 	int targetTask;
