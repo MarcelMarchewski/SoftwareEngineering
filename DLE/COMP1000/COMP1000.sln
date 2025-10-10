@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week1", "Week1\Week1.vcxproj", "{5EE93950-D6E7-9D2B-475D-6CFA0E9B0210}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week2", "Week2\Week2.vcxproj", "{C87E3086-B245-E1D3-A0FB-13F707902C15}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedSystems", "SharedSystems\SharedSystems.vcxitems", "{264D5CC0-798F-474F-B58D-64C993A3F113}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week3", "Week3\Week3.vcxproj", "{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,14 @@ Global
 		{C87E3086-B245-E1D3-A0FB-13F707902C15}.Release|x64.Build.0 = Release|x64
 		{C87E3086-B245-E1D3-A0FB-13F707902C15}.Release|x86.ActiveCfg = Release|Win32
 		{C87E3086-B245-E1D3-A0FB-13F707902C15}.Release|x86.Build.0 = Release|Win32
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Debug|x64.ActiveCfg = Debug|x64
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Debug|x64.Build.0 = Debug|x64
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Debug|x86.ActiveCfg = Debug|Win32
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Debug|x86.Build.0 = Debug|Win32
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Release|x64.ActiveCfg = Release|x64
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Release|x64.Build.0 = Release|x64
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Release|x86.ActiveCfg = Release|Win32
+		{83167FC2-16E7-4C28-A1C1-1DFC99FCB159}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +53,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SharedSystems\SharedSystems.vcxitems*{264d5cc0-798f-474f-b58d-64c993a3f113}*SharedItemsImports = 9
 		SharedSystems\SharedSystems.vcxitems*{5ee93950-d6e7-9d2b-475d-6cfa0e9b0210}*SharedItemsImports = 4
+		SharedSystems\SharedSystems.vcxitems*{83167fc2-16e7-4c28-a1c1-1dfc99fcb159}*SharedItemsImports = 4
 		SharedSystems\SharedSystems.vcxitems*{c87e3086-b245-e1d3-a0fb-13f707902c15}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
