@@ -12,19 +12,24 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 
 string BYTE "This is very exciting."
 
-; WHAT IS THE SIZE OF THE ABOVE ARRAYS IN BYTES?
-
 .code ; code segment
 
 
 main PROC ; main procedure
-	lea eax, string
+	mov esi, 0
 
 	iterate:
-		; todo, iterate through string
+		mov eax, [string + TYPE string * esi]
+		
+		cmp eax, "i"`
+		jne endloop
 
-		cmp ax, 1
-		jne iterate
+		inc bx
+
+		endloop:
+			inc esi
+			cmp eax, 0x00
+			jne iterate
 
 	INVOKE ExitProcess, 0 ; call exit function
 
