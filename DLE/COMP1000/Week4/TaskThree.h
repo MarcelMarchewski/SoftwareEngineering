@@ -4,7 +4,7 @@
 #include <iostream>
 
 /// <summary>
-/// Task 3: Simple Calculator Using Switch Case
+/// Task 3: Pointer Basics
 /// </summary>
 class TaskThree : public Task
 {
@@ -16,55 +16,19 @@ class TaskThree : public Task
 
 		void DoTask() override
 		{
-			// Declare empty array
-			int num[2];
+			// Declare and initialise integer
+			int num = 10;
 
-			// Populate array with user input
-			for (int i = 0; i < 2; i++) 
-			{
-				std::cout << "Enter number " << i + 1 << ": ";
+			// Declare and initialise pointer to the num variable
+			int* numPtr = &num;
 
-				std::cin >> num[i];
-			}
+			// Output the value of num via pointer
+			std::cout << "Variable value from pointer: " << *numPtr;
 
-			// Declare user input variable
-			int operation;
+			// Set value of num via pointer
+			*numPtr = 15;
 
-			// Prompt user and take input
-			std::cout << "\nChoose an operation (1 = Addition, 2 = Subtraction, 3 = Multiplication, 4 = Division): ";
-
-			std::cin >> operation;
-
-			// Branch for each operation number
-			switch (operation) 
-			{
-				case (1): 
-				{
-					std::cout << "\nAddition result: " << num[0] + num[1];
-
-					break;
-				}
-
-				case (2):
-				{
-					std::cout << "\nSubtraction result: " << num[0] - num[1];
-
-					break;
-				}
-
-				case (3):
-				{
-					std::cout << "\nMultiplication result: " << num[0] * num[1];
-
-					break;
-				}
-
-				case (4):
-				{
-					std::cout << "\nDivision result: " << num[0] / num[1];
-
-					break;
-				}
-			}
+			// Output updated value of num via pointer
+			std::cout << "\nVariable updated value from pointer: " << *numPtr;
 		}
 };

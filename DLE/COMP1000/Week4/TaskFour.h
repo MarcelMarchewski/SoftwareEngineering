@@ -16,46 +16,29 @@ class TaskFour : public Task
 
 		void DoTask() override
 		{
-			// Declare user input variable
-			int choice;
+			// Declare and initialise constant size variable
+			const int SIZE = 5;
 
-			// Take user input, then clear the screen
-			std::cout << "Main Menu:\n\n1. Start Game\n2. Load Game\n3. Quit\n\n";
+			// Declare and initialise array with 5 values
+			int arr[SIZE] = {1, 2, 3, 4, 5};
 
-			std::cin >> choice;
+			// Declare and initialise pointer to array
+			int *arrPtr = arr;
 
-			std::system("cls");
-
-			// Branch depending on the choice the user has made
-			switch (choice) 
+			// Output value of each array element with pointer arithmetic
+			for (int i = 0; i < SIZE; i++) 
 			{
-				case (1):
-				{
-					std::cout << "*You started the game...*";
+				std::cout << "Array element " << i + 1 << ": " << *arrPtr + i << "\n";
+			}
 
-					return;
-				}
+			std::cout << "\n";
 
-				case (2): 
-				{
-					std::cout << "*You loaded a save...*";
+			// Modify value of each array element with pointer arithmetic then output them
+			for (int i = 0; i < SIZE; i++) 
+			{
+				arrPtr[i] += 2;
 
-					return;
-				}
-
-				case (3): 
-				{
-					std::cout << "*You quit the game...*";
-
-					return;
-				}
-
-				default: 
-				{
-					std::cout << "Invalid option. Try again.";
-
-					return;
-				}
+				std::cout << "Modified Array element " << i + 1 << ": " << *arrPtr + i << "\n";
 			}
 		}
 };

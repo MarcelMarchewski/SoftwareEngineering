@@ -16,14 +16,31 @@ class TaskTwo : public Task
 
 		void DoTask() override
 		{
+			// Declare and initialise strings
 			std::string a = "String A, ";
 			std::string b = "String B";
 
+			// Concatenate strings
 			std::string c = a + b;
 
+			// Output original and concatenated strings, then the length of the final string
 			std::cout << "Before operations: " << a << b << "\nAfter operations: " << c;
-			std::cout << "String length: " << c.length();
+			std::cout << "\nString length: " << c.length();
 			
-			// todo: compare strings
+			// Check if a and b are equal
+			switch (a.compare(b)) 
+			{
+				case (0): 
+				{
+					std::cout << "\nString comparison matched";
+					break;
+				}
+
+				default: 
+				{
+					std::cout << "\nString comparison did not match";
+					break;
+				}
+			}
 		}
 };

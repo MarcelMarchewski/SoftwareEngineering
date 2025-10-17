@@ -4,7 +4,7 @@
 #include <iostream>
 
 /// <summary>
-/// Task 5: Nested If-Else for Temperature Check
+/// Task 5: Pointer to String and Memory Allocation
 /// </summary>
 class TaskFive : public Task
 {
@@ -16,39 +16,23 @@ class TaskFive : public Task
 
 		void DoTask() override
 		{
-			// Declare user input variable
-			int temp;
+			// Declare and initialise constant size variable
+			const int SIZE = 20;
 
-			// Prompt user and take input
-			std::cout << "Provide temperature: ";
+			// Declare a dynamically allocated array
+			char* string = new char[SIZE];
 
-			std::cin >> temp;
+			// Prompt user
+			std::cout << "Provide a string: ";
 
-			// Branch depending on if the temperature falls within a certain range
-			if (temp <= 30) 
-			{
-				if (temp >= 15) 
-				{
-					std::cout << "It's warm.";
-				}
+			// Clear input buffer, then take input
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			std::cin.getline(string, SIZE);
 
-				else 
-				{
-					if (temp >= 0)
-					{
-						std::cout << "It's cold.";
-					}
+			// Output user string and length
+			std::cout << "\nGiven string: " << string << "\nLength: " << strlen(string);
 
-					else
-					{
-						std::cout << "It's freezing.";
-					}
-				}
-			}
-
-			else 
-			{
-				std::cout << "It's hot.";
-			}
+			// Deallocate memory
+			delete[] string;
 		}
 };
