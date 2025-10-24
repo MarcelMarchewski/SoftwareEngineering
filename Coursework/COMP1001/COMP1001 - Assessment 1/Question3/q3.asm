@@ -24,6 +24,21 @@ main PROC
 		mul bh
 
 		add al, 1
+		mov dh, al
+
+		mov al, [arrC + TYPE arrC * esi]
+		mul ch
+
+		add al, 1
+		add dh, al
+
+		mov al, [arrA + TYPE arrA * esi]
+		add al, [arrC + TYPE arrC * esi]
+
+		div ch
+
+		add dh, al
+		mov [arrB + TYPE arrB * esi], dh
 
 		inc esi
 		cmp esi, 10
