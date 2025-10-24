@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week3", "Week3\Week3.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week4", "Week4\Week4.vcxproj", "{A54B3ADE-A810-48B3-A62F-19CA21ACCBB1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week5", "Week5\Week5.vcxproj", "{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -53,6 +55,14 @@ Global
 		{A54B3ADE-A810-48B3-A62F-19CA21ACCBB1}.Release|x64.Build.0 = Release|x64
 		{A54B3ADE-A810-48B3-A62F-19CA21ACCBB1}.Release|x86.ActiveCfg = Release|Win32
 		{A54B3ADE-A810-48B3-A62F-19CA21ACCBB1}.Release|x86.Build.0 = Release|Win32
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Debug|x64.ActiveCfg = Debug|x64
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Debug|x64.Build.0 = Debug|x64
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Debug|x86.Build.0 = Debug|Win32
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Release|x64.ActiveCfg = Release|x64
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Release|x64.Build.0 = Release|x64
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Release|x86.ActiveCfg = Release|Win32
+		{EDF57289-5B94-458A-A9F3-81D1D40AFFF1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,5 +76,6 @@ Global
 		SharedSystems\SharedSystems.vcxitems*{83167fc2-16e7-4c28-a1c1-1dfc99fcb159}*SharedItemsImports = 4
 		SharedSystems\SharedSystems.vcxitems*{a54b3ade-a810-48b3-a62f-19ca21accbb1}*SharedItemsImports = 4
 		SharedSystems\SharedSystems.vcxitems*{c87e3086-b245-e1d3-a0fb-13f707902c15}*SharedItemsImports = 4
+		SharedSystems\SharedSystems.vcxitems*{edf57289-5b94-458a-a9f3-81d1d40afff1}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
