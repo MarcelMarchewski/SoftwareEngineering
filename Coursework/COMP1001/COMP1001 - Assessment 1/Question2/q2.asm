@@ -15,16 +15,13 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 ; main program code
 .code
 main PROC
-  lea ebx, arr					; load memory address of arr into ebx, use this to confirm program functionality (registers -> memory 1 in vs22)
-
-  mov eax, [arr + TYPE arr * 3] ; move fourth element of arr into eax
+  mov eax, [arr + TYPE arr * 3] ; move last element of arr into eax
   mul multiplier				; multiply eax by the multiplier variable (3)
 
-  mov edx, 0					; clear edx to prevent incorrect division result
-  div divisor					; divide eax by the divisor variable (0)
+  div divisor					; divide eax by the divisor variable (6)
 
-  mov [arr + TYPE arr * 3], eax
-	INVOKE ExitProcess, 0 ; call exit function
+  mov [arr + TYPE arr * 3], eax ; move value of eax into the last element of arr
+	INVOKE ExitProcess, 0		; call exit function
   
 main ENDP
 END main
