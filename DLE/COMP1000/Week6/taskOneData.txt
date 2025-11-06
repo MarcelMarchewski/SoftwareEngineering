@@ -1,0 +1,3 @@
+    String datatype
+5
+5.595

@@ -1,0 +1,4 @@
+String data
+10
+10.5958
+Full line: 20 data
