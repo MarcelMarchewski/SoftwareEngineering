@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <string>
 
 /// <summary>
 /// Task 2: Reading Data from Files Using ifstream
@@ -34,7 +35,7 @@ class TaskTwo : public Task
 				std::ofstream dataStream;
 				dataStream.open("taskTwoData.txt");
 
-				dataStream << "String data\n";
+				dataStream << "String\n";
 				dataStream << 10 << "\n";
 				dataStream << 10.595823 << "\n";
 				dataStream << "Full line: " << 20 << " data";
@@ -49,12 +50,19 @@ class TaskTwo : public Task
 				return;
 			}
 
-			std::string line;
+			std::string dataString;
+			int dataInt;
+			float dataFloat;
+			std::string fullLineDataString;
 
-			while (dataStreamRead.getline(line)) 
-			{
+			dataStreamRead >> dataString;
+			dataStreamRead >> dataInt >> dataFloat;
 
-			}
+			dataStreamRead.seekg(2, std::ifstream::cur);
+
+			std::getline(dataStreamRead, fullLineDataString);
+
+			std::cout << "String: " << dataString << "\nInt: " << dataInt << "\nFloat: " << dataFloat << "\nFull line string: " << fullLineDataString;
 
 			dataStreamRead.close();
 		}
