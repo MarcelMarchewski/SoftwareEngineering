@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week5", "Week5\Week5.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week6", "Week6\Week6.vcxproj", "{93B38651-35FD-432E-9F9D-AE911496F4A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week7", "Week7\Week7.vcxproj", "{5791CD5D-DADC-4E33-830C-B8716E2421CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -73,6 +75,14 @@ Global
 		{93B38651-35FD-432E-9F9D-AE911496F4A6}.Release|x64.Build.0 = Release|x64
 		{93B38651-35FD-432E-9F9D-AE911496F4A6}.Release|x86.ActiveCfg = Release|Win32
 		{93B38651-35FD-432E-9F9D-AE911496F4A6}.Release|x86.Build.0 = Release|Win32
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Debug|x64.ActiveCfg = Debug|x64
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Debug|x64.Build.0 = Debug|x64
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Debug|x86.Build.0 = Debug|Win32
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Release|x64.ActiveCfg = Release|x64
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Release|x64.Build.0 = Release|x64
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Release|x86.ActiveCfg = Release|Win32
+		{5791CD5D-DADC-4E33-830C-B8716E2421CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +92,7 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SharedSystems\SharedSystems.vcxitems*{264d5cc0-798f-474f-b58d-64c993a3f113}*SharedItemsImports = 9
+		SharedSystems\SharedSystems.vcxitems*{5791cd5d-dadc-4e33-830c-b8716e2421cc}*SharedItemsImports = 4
 		SharedSystems\SharedSystems.vcxitems*{5ee93950-d6e7-9d2b-475d-6cfa0e9b0210}*SharedItemsImports = 4
 		SharedSystems\SharedSystems.vcxitems*{83167fc2-16e7-4c28-a1c1-1dfc99fcb159}*SharedItemsImports = 4
 		SharedSystems\SharedSystems.vcxitems*{93b38651-35fd-432e-9f9d-ae911496f4a6}*SharedItemsImports = 4
